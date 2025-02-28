@@ -1,0 +1,113 @@
+@font-face {
+    font-family: login;
+    src: url("../fonts/Rubik/static/Rubik-Regular.ttf") format(truetype);
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: login;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #011f4b 50%, #fff  50%);
+  }
+  
+  .register-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background:#b3cde0;
+    padding: 20px 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form .form-title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0px 30px;
+    color: #011f4b ;
+  }
+  
+  .register-form .form-input {
+    margin: 10px 0px;
+  }
+  
+  .register-form .form-input label {
+    display: block;
+    font-size: 15px;
+    color:#03396c;
+    margin-bottom: 5px;
+  }
+  
+  .register-form .form-input input,
+  .register-form .form-input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #011f4b;
+    font-size: 15px;
+  }
+  
+  .register-form .form-input select {
+    padding: 8px;
+  }
+  
+  .register-form #register-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background:  #011f4b;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .register-form #register-btn:hover {
+    background-color: #03396c;
+  }
+  
+  .back-icon-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .back-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #011f4b;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-icon:hover {
+    background: #fff;
+  }
+  
+  .back-icon i {
+    margin-right: 5px;
+  }
+  
+  .login-here {
+    color: #03396c;
+    margin-left: 3px;
+    display: inline-block;
+  }
+  
+  .login-here:hover {
+    color: #653815;
+  }
+  

@@ -1,0 +1,1186 @@
+
+@font-face {
+    font-family: paginaweb;
+    src: url("../fonts/Montserrat/static/Montserrat-Light.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: titulares;
+    src: url("../fonts/Oxanium/static/Oxanium-Light.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: login;
+    src: url("../fonts/Rubik/static/Rubik-Regular.ttf") format(truetype);
+  }
+  @font-face {
+    font-family: about;
+    src: url("../fonts/Inconsolata/static/Inconsolata-Regular.ttf") format(truetype);
+  }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: paginaweb;
+    background-color: #f9f9f9;
+}
+img{
+    width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #011f4b;
+    border-bottom: 2px solid white; 
+}
+
+/* Estilo del logo */
+.logo img {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Botón Iniciar Sesión */
+.login {
+    border: 2px solid white	; 
+    background-color:#55a6ce; 
+    color:#011f4b ;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.iniciar-sesion {
+    margin-right: 10px; /* Ajusta el valor según sea necesario */
+}
+
+.login:hover {
+    color: white ;
+    background-color: 	#1d3464;
+    border: 2px solid #b3ecec;
+}
+.abrir-menu:hover {
+    color: #e51717; /* Cambia el color a rojo al pasar el cursor */
+}
+/* Menú hamburguesa */
+.abrir-menu {
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Menú desplegable */
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#011f4b;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    z-index: 100;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Mostrar menú cuando esté activo */
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Botón cerrar menú */
+.cerrar-menu {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.cerrar-menu:hover {
+    color: #e51717; /* Cambia el color a rojo al pasar el cursor */
+}
+/* Estilo de los links del menú */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.footer {
+    display: flex;
+    background-color: #011f4b;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.footer-logo {
+    width: 80px; /* Tamaño del logo */
+}
+
+.footer-menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: white;
+}
+
+.nav-list li a:hover,
+.footer-menu a:hover {
+    color: 	#87ceeb; /* Cambia el color a rojo al pasar el cursor */
+}
+.derecha{
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+
+/* CSS DE inicio.html */
+.introduccion.i1 {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    height: 600px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.introduccion.i1 .titulo {
+    font-size: 60px; /* Tamaño del título */
+    text-align: center; /* Alinea el título al centro */
+    color: white; /* Color del texto */
+    font-family: titulares; /* Fuente del título */
+    line-height: 1; /* Altura de línea ajustada para minimizar espacio */
+}
+
+.introduccion.i1 .texto {
+    background-color:  #011f4b86 ; /* Fondo semitransparente */
+    padding: 5px 10px; /* Menos espacio para que el fondo solo bordeé el texto */
+    border-radius: 5px; /* Bordes suaves */
+    margin: 0 auto; /* Centra el bloque de texto si es necesario */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 20px; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+}
+   
+
+.introduccion .btn {
+    color: #fff;
+    text-align: center; /* Alinea el botón al centro */
+}
+
+.btn button {
+    background-color: #011f4b; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 14px 50px; /* Ancho del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Efecto de transición suave */
+}
+
+.btn button:hover {
+    background-color: #03396c; /* Cambia el color del botón al pasar el mouse */
+}
+
+/* Seccion de motivos */
+.motivos {
+    height: auto; /* Altura automática para adaptarse al contenido */
+    width: 100%; /* Ancho total de la sección */
+    display: flex; /* Habilitar flexbox */
+    flex-direction: column; /* Disponer los hijos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 40px 0; /* Espaciado interno */
+}
+
+.motivos .titulo {
+    text-align: center; /* Centrar el texto del título */
+    margin-top: 10px; /* Espaciado superior */
+    color: #011f4b; /* Color del texto */
+    font-size: 20px;
+}
+
+.container-badges {
+    display: flex; /* Habilitar flexbox en el contenedor de badges */
+    justify-content: space-around; /* Separar las columnas de badges */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    width: 80%; /* Ancho fijo para el contenedor de badges */
+    padding: 20px; /* Espaciado interno */
+    gap: 50px; /* Espacio entre columnas */
+}
+
+.column {
+    display: flex; /* Habilitar flexbox para columnas */
+    flex-direction: column; /* Disponer los badges en vertical */
+    align-items: center; /* Centrar badges dentro de la columna */
+    flex: 1; /* Permitir que cada columna tome espacio igual */
+}
+
+.badge {
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px; 
+    width: 100%; /* Ancho completo dentro de la columna */
+    font-size: 16px; 
+    color: #011f4b;
+    background-color: 	#dbe8ea; /* Fondo ligero para los badges */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 10px 0; /* Espacio entre los badges */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+.badge:hover {
+    transform: scale(1.02) translateY(5px); /* Aumenta y desplaza */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+    transition: all 0.3s ease;
+}
+
+/* Estilo del icono dentro del badge */
+.badge i {
+    margin-right: 10px; /* Espacio entre icono y texto */
+    font-size: 40px; /* Tamaño del icono */
+}
+
+
+
+
+
+
+/* Sección de Cursos Destacados */
+.destacados {
+    padding: 40px; /* Espaciado alrededor de la sección */
+    background-color:#011f4b; /* Fondo claro */
+}
+
+.titulo h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Espacio debajo del título */
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Contenedor de los cursos */
+.container-cursos {
+    display: flex; /* Flexbox para alinear los cursos */
+    justify-content: space-between; /* Espacio igual entre los cursos */
+    gap: 20px; /* Espacio entre los cursos */
+}
+
+/* Estilo de cada curso */
+.curso {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 30%; /* Cada curso ocupa el 30% del ancho */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover sobre los cursos */
+.curso:hover {
+    transform: scale(1.15); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+/* Imagen dentro de los cursos */
+.curso-imagen {
+    width: 100%;
+    height: 150px; /* Fija la altura para que todas las imágenes sean iguales */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    border-radius: 8px;
+}
+
+/* Título de cada curso */
+.curso h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Descripción de cada curso */
+.curso .descripcion {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Botón para más información */
+.btn-mas-info {
+    background-color:  #011f4b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-mas-info:hover {
+    background-color:	#1a3a4a; /* Cambia el color del botón al pasar el mouse */
+ 
+  
+}
+
+
+
+/* Valoraciones */
+.valoraciones {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.valoraciones h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#011f4b;
+}
+
+.valoraciones-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.valoracion {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1;
+    display: flex;               /* Agregar flexbox */
+    flex-direction: column;      /* Colocar elementos en columna */
+}
+.valoracion i{
+    color: #011f4b;
+    font-size: 20px;
+}
+
+.valoracion .puesto{
+    font-size: 1.1em;
+    margin: 15px 0;
+    color: #555;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-top: auto;            /* Empuja el bloque del autor al final */
+    
+}
+
+.autor img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.autor h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.autor .puesto{
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+
+/* apartado de Contacto */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el texto informativo */
+.texto-informativo {
+    flex: 1;
+    margin-right: 50px; /* Reducimos el margen derecho */
+    background-color: #011f4b;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 8px; /* Esquinas redondeadas */
+    margin-left: 0; /* Pegamos el texto al borde izquierdo */
+}
+
+.texto-informativo h2 {
+    color: #b3cde0;
+    margin-bottom: 20px;
+}
+
+.texto-informativo p, 
+.texto-informativo ul, 
+.texto-informativo li {
+    color: #f7e8f3;
+    text-align: justify;
+}
+
+/* Estilos para la sección de redes sociales */
+.redes-sociales {
+    margin-top: 20px;
+    text-align: center; /* Centramos los íconos */
+}
+
+.redes-sociales a {
+    color: white; /* Color de los iconos */
+    font-size: 30px; /* Tamaño de los iconos */
+    margin-right: 20px; /* Espacio entre los iconos */
+    text-decoration: none; /* Eliminar subrayado */
+    
+}
+
+.redes-sociales a:hover {
+    color: #b3cde0; /* Color al pasar el mouse */
+}
+
+/* Estilos para el formulario */
+.formulario {
+    flex: 1;
+    background-color: #b3cde0;
+    padding: 25px 35px; /* Más espacio en el formulario */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #03396c;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #03396c;
+    font-size: 16px;
+    color: #03396c;
+    box-sizing: border-box;
+    border-radius: 4px; /* Borde redondeado ligero */
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: #011f4b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px; /* Suavizar bordes */
+}
+
+.btn-enviar:hover {
+    background-color: #03396c;
+}
+
+
+
+
+
+
+
+
+
+
+/* ESTILO DE QUIENES-SOMOS */
+/* ESTILO DE QUIENES-SOMOS */
+/* ESTILO DE QUIENES-SOMOS */
+
+
+
+/* Introduccion */
+.introduccion.i4{
+    position: relative; /* Esto está bien para la superposición */
+    height: 600px; /* Establece una altura fija para el contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    flex-direction: column;  /* Alinea los elementos en columna en vez de fila */
+    align-items: center;     /* Centra el contenido verticalmente */
+    text-align: center;      /* Centra el texto */
+    
+}
+.introduccion.i4 .background-video{
+    filter: blur(3px); /* Ajusta el valor para más o menos desenfoque */
+}
+
+.introduccion.i4 .titulo{
+    font-size: 40px; /* Tamaño de fuente un poco más grande */
+    color: #040622;
+    
+    text-shadow: 4px 3px 5px rgba(179, 205, 224, 0.7); /* Sombra más pronunciada */
+    font-family: about;
+ 
+}
+
+.introduccion.i4 .subtitulo{
+    font-size: 24px;
+    color: #b3cde0; /* Color oscuro */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 0 #011f4b; /* Sombra más marcada en una sola dirección */
+}
+
+
+
+/* Misión */
+.contenedor-mision {
+    
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px; /* Aumentamos el ancho máximo */
+    margin: 40px auto;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+.texto-mision {
+    padding: 20px;
+    flex: 2; /* Hacemos que el texto ocupe más espacio */
+}
+
+.texto-mision h2 {
+    font-size: 30px; /* Tamaño de título ligeramente menor */
+    color:#011f4b;
+  
+    margin-bottom: 10px;
+}
+
+.texto-mision p {
+    font-size: 20px; /* Tamaño de fuente un poco menor para ocupar más ancho */
+    color: #333;
+    line-height: 1.8; /* Mayor interlineado para facilitar lectura */
+    margin-bottom: 15px;
+}
+
+.imagen-mision {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagen-mision img {
+    border-radius: 8px;
+}
+
+
+
+/* Valores */
+/* Valores */
+/* Valores */
+
+.contenedor-valores{
+    background-color: 	#deecfb;
+    padding-bottom: 50px; /* Añade espacio en la parte inferior de los valores */
+}
+.contenedor-valores .titular{
+    text-align: center;
+    padding-top: 20px; /* Ajusta el valor según el espacio que quieras */
+}
+.contenedor-valores .titular h2{
+    color: #011f4b;
+    font-size: 40px;
+}
+.contenedor-valores .titular p{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.valores {
+    display: flex;
+    flex-direction: column;
+    
+}
+.valor {
+    background-color: white; /* Fondo de cada cuadrado */
+    color:#011f4b;
+    padding: 10px;
+    margin: 20px;
+    width: 250px; /* Ancho fijo para cada cuadrado */
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: flex-start; /* Alineación a la izquierda */
+}
+.valores .valor .iconito{
+    font-size: 25px;
+    margin-top: 15px;
+    color:#011f4b; /* Color del icono para que resalte */
+}
+.valores .valor .titulo h2{
+    color: black;
+    font-size: 20px;
+}
+.fila{
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Numeritos */
+/* Numeritos */
+/* Numeritos */
+/* Numeritos */
+
+.container-eleccion .intro-numeros {
+
+    text-align: center;
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega un espacio alrededor */
+}
+
+.container-eleccion .intro-numeros h1 {
+    font-size: 30px; /* Tamaño del título */
+    font-weight: bolder;
+    color: black; /* Cambia el color según prefieras */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.container-eleccion .intro-numeros p {
+    font-size: 16px; /* Tamaño del subtítulo */
+    color: #666; /* Cambia el color según prefieras */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+
+
+/* Caja de números (en fila) */
+.caja-numero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+}
+
+/* Estilo de cada bloque de número */
+.numeros {
+    flex: 1 1 200px; /* Cada caja ocupa al menos 200px de ancho y se adapta al espacio disponible */
+    max-width: 220px;
+    padding: 20px;
+   
+    border-radius: 5px;
+
+    text-align: center;
+    margin: 10px; /* Espacio adicional entre cajas */
+}
+
+/* Número grande en cada bloque */
+.numeros h1 {
+    font-size: 50px;
+    color: #77aaff;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Descripción en cada bloque */
+.numeros p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+/* EQUIPO */
+/* EQUIPO */
+/* EQUIPO */
+.titulo-team{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    background-color:#deecfb;;
+    padding-top: 15px;
+    color:#011f4b;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color:#deecfb;
+}
+
+.miembro {
+    text-align: left; /* Alineación predeterminada de todo a la izquierda */
+    max-width: 450px;
+    padding: 15px;
+}
+
+.persona img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.miembro h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.puesto {
+    color:#011f4b;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    background-color:	#b9e2f5 ;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+
+
+/* MÉTODO */
+/* MÉTODO */
+/* MÉTODO */
+.titulo {
+    padding-top: 20px;
+    text-align: center;  /* Centra el título */
+    font-size: 40px;     /* Tamaño de fuente del título */
+    color:#011f4b;
+    font-weight: bold;
+}
+
+.contenido-metodo {
+    display: flex;                  /* Usa flexbox para alinear en fila */
+    justify-content: center;        /* Centra el contenido horizontalmente */
+    align-items: center;            /* Alinea verticalmente al centro */
+    margin-top: 20px;              /* Espacio superior entre el título y el contenido */
+}
+
+.texto {
+    max-width: 500px;              /* Limita el ancho del texto para que no se extienda demasiado */
+    margin-right: 80px;            /* Espacio a la derecha del texto */
+    text-align: left;             /* Centra el texto dentro de su contenedor */
+    font-size: 20px;
+    font-size: 20px;
+    font-size: 20px;
+}
+
+.contenido-metodo img {
+    max-width: 400px;              /* Ajusta el tamaño máximo de la imagen */
+    height: auto;                  /* Mantiene la proporción de la imagen */
+}
+
+
+
+
+
+
+
+
+
+/* CSS DEL APARTADO DE SUSCRIPCIONES */
+
+/*Introducccion*/
+
+.introduccion.i2{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.introduccion.i2 .titulo {
+    position: absolute;
+    right: 2%; /* Distancia desde el borde derecho */
+    top: 44%; /* Ajuste fino para centrar mejor */
+    transform: translateY(-52%); /* Centrado vertical */
+    font-size: 60px;
+    color: white;
+    font-family: titulares;
+    text-align: right;
+}
+
+
+
+
+
+
+
+/* Contenedor de la sección de planes */
+.planes-container {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #c3e8ff;
+    height: 600px;
+}
+
+/* Título de la sección de planes */
+.titulo-planes {
+    font-size: 36px;
+    color: #011f4b;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal de los planes */
+.planes {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre cada plan */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los planes se acomoden en varias filas en pantallas pequeñas */
+}
+
+/* Estilo de cada plan */
+.plan {
+    background-color: #002244; /* Azul marino oscuro */
+    color: #e0e6ed; /* Texto gris claro para contraste */
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del plan */
+}
+
+.tipo h2 {
+ 
+    font-size: 24px;
+    margin: 0;
+}
+/* Hover para cada título */
+.platita {
+    color: #c0c0c0; /* Plateado */
+}
+
+.orito {
+    color: #ffd700; /* Dorado */
+}
+
+.diamantito {
+    color: #00ccff; /* Azul claro que representa un diamante */
+}
+
+
+.platita:hover {
+    color: #d4d4d4; /* Color plateado más claro al hacer hover */
+}
+
+.orito:hover {
+    color: #ffea00; /* Dorado más intenso al hacer hover */
+}
+
+.diamantito:hover {
+    color: #33e0ff; /* Azul más claro en hover */
+}
+
+.ventajas ul {
+    list-style-type: none; /* Quitar el punto de la lista */
+    padding-left: 0;
+    text-align: left;
+    margin: 0; /* Eliminar margen entre listas */
+}
+
+.ventajas li {
+    color: #b3cce6; /* Azul claro para el texto de las ventajas */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    padding: 10px 0; /* Espaciado arriba y abajo de cada ventaja */
+    position: relative;
+}
+
+.ventajas li i {
+    color: #4da6ff; /* Azul claro para los íconos de verificación */
+    font-size: 18px; /* Tamaño del ícono */
+}
+
+.ventajas li:not(:last-child)::after {
+    content: ""; /* Crear una línea después de cada elemento, excepto el último */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #5a738e; /* Gris azulado para la línea divisoria */
+    opacity: 0.3; /* Ajusta la opacidad para que sea más sutil */
+}
+
+.pago-plata{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 30px;
+    color:  #c0c8d0; 
+    font-weight: bold;
+}
+.pago-oro{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ffbb33; 
+    font-weight: bold;
+}
+
+.pago-diamond{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color:#1fc5ff; 
+    font-weight: bold;
+}
+
+
+.second-button {
+    width: 175px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    color: #FFFFFF; /* Color del texto por defecto */
+    font-weight: bold;
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    text-align: center;
+    line-height: 50px; /* Centra el texto verticalmente */
+    text-decoration: none;
+}
+
+.second-button.plata {
+    background-color: #C0C0C0; /* Fondo Plata */
+    border-color: #A9A9A9; /* Borde gris oscuro */
+}
+
+.second-button.plata:hover {
+    background-color: #B0B0B0; /* Oscurecer el fondo al hacer hover */
+}
+
+.second-button.oro {
+    background-color: #FFD700; /* Fondo Oro */
+    border-color: #DAA520; /* Borde oro viejo */
+    color: #333333; /* Texto oscuro para buen contraste */
+}
+
+.second-button.oro:hover {
+    background-color: #E6B800; /* Tono ligeramente más oscuro en hover */
+}
+
+.second-button.diamante {
+    background-color: #C3E8FF; /* Fondo Diamante */
+    border-color: #00A1FF; /* Borde azul brillante */
+    color: #005377; /* Texto azul oscuro */
+}
+
+.second-button.diamante:hover {
+    background-color: #A1D6F0; /* Tono más suave en hover */
+}
+
+.second-button::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #011f4b; /* Fondo en hover */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease-in;
+    transform: translateY(44px);
+}
+
+.second-button:hover::before {
+    width: 100%; /* Efecto de expansión en hover */
+}
+
+
+/* Apartado de Recursos */
+/* Apartado de Recursos */
+/* Apartado de Recursos */
+
+
+
+.introduccion.i3{
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/security.jpg");
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+/* Videos */
+
+.herramientas{
+    background-color: white;
+}
+.herramientas .titulo h2{
+    color: #011f4b;
+}
+.container-videos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.video{
+    background-color:#011f4b;
+    padding: 15px; /* Espacio interno alrededor del contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 10px; /* Espacio entre las tarjetas */
+    text-align: center; /* Centrar el texto de la descripción */
+    width: 100%; /* Asegura que las tarjetas ocupen el ancho del contenedor */
+ 
+}
+.video img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video img:hover {
+    transform: scale(1.05);
+}
+
+.video p {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Enlaces */
+.enlaces{
+    background-color: #011f4b;
+    height: 500px;
+}
+.container-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.enlace {
+    flex: 1;
+    min-width: 200px;
+}
+
+.enlace button {
+    background-color: #a56abf;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  ;
+}
+
+.enlace button:hover {
+    background-color: #8e4a9c;
+}
+
+/* Repositorios */
+.container-badges {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 10px;
+    width: 48%;
+}
+
+.badge i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+
+
+
+/* CSS para ocultar los cursos no coincidentes */
+.filtro {
+    display: none;
+}

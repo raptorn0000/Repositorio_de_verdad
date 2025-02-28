@@ -1,0 +1,482 @@
+
+/* CSS de suscripciones.html */
+
+.introduccion.i2{
+    justify-content: center;
+    color: #011f4b;
+    text-align: center;
+    background-image: url("../img/security.jpg");
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+.planes {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.planes h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.plan {
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+.badge {
+    display: flex;
+    align-items: center; 
+    padding: 20px 30px; /* Aumentar el relleno para que los badges sean más altos */
+    width: 100%; /* El ancho se mantendrá ocupando todo el espacio disponible */
+    font-size: 20px; /* Aumentar el tamaño del texto */
+    color: #011f4b;
+    background-color: #f2f2f2; /* Fondo claro para los badges */
+    border-radius: 10px; /* Aumentar ligeramente el redondeo */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Aumentar un poco la sombra */
+    margin: 15px 0; /* Aumentar el espacio entre badges */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Estilo del icono dentro del badge */
+.badge i {
+    margin-right: 15px; /* Aumentar el espacio entre el icono y el texto */
+    font-size: 30px; /* Aumentar el tamaño del icono */
+}
+
+
+
+
+
+
+
+
+/* Sección de contacto */
+.contacto {
+    display: flex;
+    justify-content: flex-start; /* Mueve el formulario hacia la izquierda */
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    padding: 20px;
+}
+
+/* Texto informativo */
+.texto-informativo {
+    width: 40%; /* Reduce un poco el ancho */
+}
+
+/* Estilo general del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ampliar el ancho máximo del formulario */
+    padding: 20px;
+    border: 2px solid #011f4b;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo de los inputs y selects */
+.form-group input, 
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Estilo del campo de mensaje */
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: 100px; /* Aumenta la altura del campo de texto */
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+/* Estilo del botón */
+button {
+    padding: 12px;
+    background-color: #011f4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #0a3d7e;
+}
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el contenedor */
+    padding: 20px;
+    border: 2px solid #011f4b; /* Borde del apartado */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo claro */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.redes-sociales h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.redes-sociales p {
+    font-size: 16px;
+    color: #555;
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.redes-icons {
+    display: flex; /* Usa flex para alinear los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+}
+
+.red-icon {
+    font-size: 30px; /* Tamaño de los íconos */
+    color: #011f4b; /* Color de los íconos */
+    transition: transform 0.3s, color 0.3s; /* Transición suave para el efecto hover */
+}
+
+.red-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    color: #a56abf; /* Cambio de color al pasar el mouse */
+}
+
+
+/* CSS de quienes somos */
+/* Estilo de las secciones principales */
+.quienes-somos {
+    text-align: center; /* Centrar el texto */
+    padding: 40px 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+.quienes-somos h1 {
+    font-size: 2.5rem; /* Tamaño del encabezado */
+    color: #011f4b; /* Color del encabezado */
+}
+
+.quienes-somos p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #555; /* Color del texto */
+}
+
+/* Estilo de la sección de Misión y Visión */
+.mision-vision {
+    display: flex; /* Usar flexbox para la misión y visión */
+    justify-content: space-around; /* Espacio entre columnas */
+    padding: 40px 20px; /* Espaciado interno */
+}
+
+.mision, .vision {
+    width: 45%; /* Ancho de cada columna */
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.mision h2, .vision h2 {
+    color: #011f4b; /* Color del encabezado */
+}
+
+.mision p, .vision p {
+    color: #555; /* Color del texto */
+}
+
+/* Estilo de la sección de Virtudes */
+.virtudes {
+    padding: 40px 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    text-align: center; /* Centrar el texto */
+}
+
+.virtudes h2 {
+    font-size: 2rem; /* Tamaño del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #011f4b; /* Color del encabezado */
+}
+
+.virtudes-container {
+    display: flex; /* Usar flexbox para las virtudes */
+    flex-wrap: wrap; /* Permitir que se ajusten en varias filas */
+    justify-content: space-around; /* Espacio igual entre los elementos */
+    gap: 20px; /* Espacio entre las virtudes */
+}
+
+.virtudes-container div {
+    background-color: white; /* Fondo blanco para cada virtud */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    width: 45%; /* Ancho de cada elemento */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.virtudes-container img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    border-radius: 10px; /* Bordes redondeados de la imagen */
+}
+
+/* Estilo de los nombres debajo de las fotos */
+.virtudes-container p {
+    text-align: center; /* Centrar el texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo de la sección Motivacional */
+.motivacional {
+    padding: 40px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+.motivacional h6 {
+    font-size: 1.5rem; /* Tamaño del encabezado */
+    color: #011f4b; /* Color del encabezado */
+}
+
+.motivacional p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #555; /* Color del texto */
+}
+
+/* Apartado de Recursos */
+
+.introduccion.i3{
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/security.jpg");
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+/* Videos */
+.container-videos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.video img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video img:hover {
+    transform: scale(1.05);
+}
+
+.video p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Enlaces */
+.container-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.enlace {
+    flex: 1;
+    min-width: 200px;
+}
+
+.enlace button {
+    background-color: #a56abf;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.enlace button:hover {
+    background-color: #8e4a9c;
+}
+
+/* Repositorios */
+.container-badges {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 10px;
+    width: 48%;
+}
+
+.badge i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: Mi;
+    src: url();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUSCRIPCIONES */
+.planes {
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+
+.contenedor-planes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    text-align: left;
+}
+
+.plan h3 {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.check {
+    color: #36C2F5; /* Checkmark color */
+    margin-right: 10px;
+}
+
+.btn-suscripcion {
+    background-color: #d9232d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-suscripcion:hover {
+    background-color: #a11d20;
+}
+
+.pie-plan {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+
+/* Estilo de dudas */
+.dudas {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #011f4b; /* Fondo para que resalte la sección */
+    border: 1px solid #ddd; /* Borde suave alrededor */
+}
+
+.contenido-dudas {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido al inicio */
+    align-items: center; /* Alinea verticalmente el contenido */
+    margin-left: 20px; /* Mueve el contenido hacia la derecha */
+}
+
+.contenido-dudas p {
+    font-size: 18px;
+    margin: 0;
+    margin-right: 10px; /* Pequeño margen derecho para separar el texto del botón */
+    color: white;
+}
+
+.contenido-dudas button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #011f4b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenido-dudas button:hover {
+    background-color: #f4a261;
+}
+
+
+
+
+
