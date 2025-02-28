@@ -1,0 +1,17 @@
+# Imagen base con PHP y FPM
+FROM php:8.1-fpm
+
+# Instalamos la extensión MySQLi necesaria para tu proyecto
+RUN docker-php-ext-install mysqli
+
+# Copiar el código fuente
+COPY src/ /var/www/html/
+
+# Establecer permisos
+RUN chown -R www-data:www-data /var/www/html
+
+# Exponer el puerto 9000 (usado por PHP-FPM)
+EXPOSE 9000
+
+# Comando de inicio
+CMD ["php-fpm"]
